@@ -1,0 +1,88 @@
+.portfolio__container {
+  width:70%;
+  margin:auto;
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.test {
+  width:33%;
+  height:15rem;
+  background-color: red;
+}
+
+.portfolio {
+  background-image: url('./../../assets/images/back-4.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &__bg {
+    background-color: rgba(255,255,255,0.94);
+    padding-bottom: 2rem;
+  
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-family: 'Montserrat Bold';
+    width: 100%;
+    text-align: center;
+    margin:3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__left {
+    width:45%;
+  }
+
+  &__right {
+    width:45%;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__badge {
+    font-size: 0.7rem;
+    background-color: var(--primary-light);
+    border-radius: 25px;
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.8rem;
+    margin-right: 0.4rem; 
+  }
+
+  &__text {
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    color: var(--primary);
+    font-family: 'Montserrat Bold';
+    background-image: url('./../../assets/images/bg-circle.png');
+    background-repeat: no-repeat;
+    block-size: contain;
+    padding:1rem 1rem;
+    text-decoration: none;
+  }
+
+  &__img {
+    width:100%;
+    border-radius: 4px;
+    padding-bottom: 2rem;
+    transition: transform .3s; /* Animation */
+  
+  }
+
+  &__img:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01);
+  }
+}
+
+

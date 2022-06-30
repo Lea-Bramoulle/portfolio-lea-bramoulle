@@ -1,0 +1,68 @@
+@use 'src/styles/vars';
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 0 4rem 0;
+
+  &__left {
+    width:30%;
+  }
+
+  &__left-title {
+    font-size: 2rem;
+  }
+
+  &__left-text {
+    padding:2rem 0;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    text-decoration: none;
+    border : solid 2px vars.$dark;
+    color:vars.$dark;
+    padding:1rem 1.5rem; 
+    border-radius : 25px; 
+  }
+
+  &__middle {
+    width:30%;
+    background-color: vars.$secondary;
+  }
+
+  &__right {
+    width:30%;
+    background-color: vars.$third;
+  }
+
+  &__card-title {
+    font-size: 0.8rem;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 25px;
+    padding:1rem 1.5rem;
+    margin : 1.5rem 0 1rem 1.5rem;
+    width:fit-content;
+  }
+
+  &__competences {
+    padding:1rem 2rem 2rem 2rem;
+  }
+
+  &__competences li {
+    padding: 0.4rem 0;
+    letter-spacing: 0.02ch;
+  }
+  
+}
+
+
+@media (max-width:700px) {
+
+  .about__left, .about__middle, .about__right {
+      width:100%;
+      margin:1.5rem 0;
+  }
+}
