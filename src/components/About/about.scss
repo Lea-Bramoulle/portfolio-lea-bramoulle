@@ -1,14 +1,19 @@
 @use 'src/styles/vars';
 
 .about {
+  margin: 6rem auto; 
+  padding:0 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding:0 0 4rem 0;
+  align-items: baseline;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.4;
 
   &__left {
-    width:30%;
+    width:50%;
+    padding-right: 3rem;
   }
 
   &__left-title {
@@ -16,7 +21,7 @@
   }
 
   &__left-text {
-    padding:2rem 0;
+    padding:4rem 0 3rem 0;
     margin-bottom: 1rem;
   }
 
@@ -24,36 +29,48 @@
     text-decoration: none;
     border : solid 2px vars.$dark;
     color:vars.$dark;
-    padding:1rem 1.5rem; 
+    padding:0.8rem 1.2rem; 
     border-radius : 25px; 
   }
 
-  &__middle {
-    width:30%;
-    background-color: vars.$secondary;
-  }
-
   &__right {
-    width:30%;
-    background-color: vars.$third;
+    width:50%;
+    background-color: rgba(226, 230, 234,0.2);
+    display: flex;
+    padding:0.2rem;
+    height:22rem;
+    overflow: hidden;
+
+    &--right {
+      width: 25%;
+    }
+
+    &--left {
+      transform: translateY(-340px) ; // 0 -340px -670px
+    }
   }
 
   &__card-title {
     font-size: 0.8rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(226, 230, 234,0.4);
     border-radius: 25px;
     padding:1rem 1.5rem;
     margin : 1.5rem 0 1rem 1.5rem;
-    width:fit-content;
+    width:100%;
   }
 
   &__competences {
-    padding:1rem 2rem 2rem 2rem;
+    padding:2rem 4rem;
   }
 
   &__competences li {
-    padding: 0.4rem 0;
+    font-size: 1rem;
+    padding: 0.5rem;
     letter-spacing: 0.02ch;
+
+    & i {
+      padding-right: 0.5rem;
+    }
   }
   
 }

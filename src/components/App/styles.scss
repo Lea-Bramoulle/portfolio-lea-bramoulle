@@ -24,3 +24,12 @@
   width:70%;
   margin:auto;
 }
+
+.portfolio__link {
+  color: vars.$primary;
+  background-image: url(src/assets/images/bg-circle.png);
+  background-repeat: no-repeat;
+  block-size: contain;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}

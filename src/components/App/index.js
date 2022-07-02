@@ -6,6 +6,8 @@ import Hero from '../Hero';
 import ContactButtons from '../ContactButtons';
 import About from '../About';
 import Works from '../Works';
+import Formations from '../Formations';
+import Contact from '../Contact';
 
 // == Composant
 function App() {
@@ -20,6 +22,8 @@ function App() {
       </main>
       <ContactButtons />
       <Works />
+      <Formations />
+      <Contact />
     </div>
   );
 }
