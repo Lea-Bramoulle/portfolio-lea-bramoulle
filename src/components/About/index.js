@@ -1,6 +1,12 @@
 import './about.scss';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { changeSelectedCategoryFront, changeSelectedCategoryBack, changeSelectedCategoryOther } from 'src/store/actions';
+
 function About() {
+  const selectedLanguagesCategory = useSelector((state) => state.selectedLanguagesCategory);
+  const dispatch = useDispatch();
+
   return (
     <section className="container about">
       <div className="about__left">
@@ -11,11 +17,26 @@ function About() {
 
       <div className="about__right">
         <div className="about__right--right">
-          <h3 className="about__card-title">#frontEnd</h3>
-          <h3 className="about__card-title">#backEnd</h3>
-          <h3 className="about__card-title">#autre</h3>
+          <h3
+            className={selectedLanguagesCategory.name === 'front-end' ? 'about__card-title active-color' : 'about__card-title'}
+            onClick={() => dispatch(changeSelectedCategoryFront())}
+          >
+            #frontEnd
+          </h3>
+          <h3
+            className={selectedLanguagesCategory.name === 'back-end' ? 'about__card-title active-color' : 'about__card-title'}
+            onClick={() => dispatch(changeSelectedCategoryBack())}
+          >
+            #backEnd
+          </h3>
+          <h3
+            className={selectedLanguagesCategory.name === 'other' ? 'about__card-title active-color' : 'about__card-title'}
+            onClick={() => dispatch(changeSelectedCategoryOther())}
+          >
+            #autre
+          </h3>
         </div>
-        <div className="about__right--left">
+        <div className="about__right--left" style={{ transform: `translateY(-${selectedLanguagesCategory.translateY}px)` }}>
           <ul className="about__competences">
             <li><i className="devicon-react-original colored" /> ReactJS</li>
             <li><i className="devicon-redux-original colored" /> Redux</li>
@@ -38,8 +59,9 @@ function About() {
             <li><i className="devicon-github-original colored" /> GitHub</li>
             <li><i className="devicon-vscode-plain colored" /> VSCode</li>
             <li><i className="devicon-npm-original-wordmark colored" /> Npm</li>
+            <li><i className="devicon-eslint-original colored" /> Eslint</li>
             <li><i className="devicon-illustrator-plain colored" /> Adobe Illustrator</li>
-            <li><i className="devicon-photoshop-plain colored" /> Adobe Illustrator</li>
+            <li><i className="devicon-photoshop-plain colored" /> Adobe Photoshop</li>
             <li><i className="devicon-canva-plain colored" /> Canva</li>
           </ul>
         </div>

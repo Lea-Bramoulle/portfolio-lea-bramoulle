@@ -23,6 +23,7 @@
   &__left-text {
     padding:4rem 0 3rem 0;
     margin-bottom: 1rem;
+    line-height: 1.6rem;
   }
 
   &__btn {
@@ -47,16 +48,19 @@
 
     &--left {
       transform: translateY(-340px) ; // 0 -340px -670px
+      transition-duration: 2s;
     }
+
   }
 
   &__card-title {
     font-size: 0.8rem;
-    background-color: rgba(226, 230, 234,0.4);
+    background-color: rgba(226, 230, 234,0.2);
     border-radius: 25px;
     padding:1rem 1.5rem;
     margin : 1.5rem 0 1rem 1.5rem;
     width:100%;
+    cursor: pointer;
   }
 
   &__competences {
@@ -75,6 +79,11 @@
   
 }
 
+.active-color {
+  background-color: #C6CAFB;
+  color: vars.$primary;
+  font-weight: bold;
+}
 
 @media (max-width:700px) {
 
