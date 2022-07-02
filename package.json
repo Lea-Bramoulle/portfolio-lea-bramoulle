@@ -1,6 +1,8 @@
 {
   "name": "react-modele",
   "scripts": {
+    "dev": "react-scripts start",
+    "heroku-postbuild": "npm run build",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "lint": "eslint ./src/** --no-error-on-unmatched-pattern",
@@ -52,6 +54,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "serve": "^13.0.2"
   }
 }
