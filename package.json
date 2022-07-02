@@ -2,9 +2,9 @@
   "name": "react-modele",
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
     "heroku-postbuild": "npm run build",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "lint": "eslint ./src/** --no-error-on-unmatched-pattern",
     "lint:fix": "eslint --fix ./src/** --no-error-on-unmatched-pattern",
     "clean": "rm -rf dist",
