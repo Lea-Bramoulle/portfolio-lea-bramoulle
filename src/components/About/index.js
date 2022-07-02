@@ -6,7 +6,7 @@ function About() {
       <div className="about__left">
         <h2 className="about__left-title">A propos et compétences</h2>
         <p className="about__left-text">Passionnée par le monde de la tech et du digital, et plus particulièrement par le développement web, j’ai décidé d’entamer une reconversion professionnelle pour me former au métier de développeuse Fullstack JS, spécialisée ReactJS.</p>
-        <a href="#" className="portfolio__link"><i className="fas fa-arrow-alt-to-bottom"></i> Curriculum Vitae</a>
+        <a href="#" className="portfolio__link"><i className="fas fa-arrow-alt-to-bottom" /> Curriculum Vitae</a>
       </div>
 
       <div className="about__right">

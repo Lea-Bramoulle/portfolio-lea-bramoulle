@@ -11,6 +11,7 @@ function Contact() {
         <div className="contact__information__links">
           <a href="#" className="portfolio__link"><i className="fab fa-github" /> Profile</a>
           <a href="#" className="portfolio__link"><i className="fab fa-linkedin-in" /> Profile</a>
+          <a href="#" className="portfolio__link"><i className="fas fa-arrow-alt-to-bottom" /> Curriculum Vitae</a>
         </div>
       </div>
       <form className="contact__form">
