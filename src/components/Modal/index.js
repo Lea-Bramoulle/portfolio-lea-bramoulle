@@ -36,7 +36,7 @@ function Modal() {
             </div>
             {
                 project.disclaimer !== null
-                  ? <p className="disclaimer">{project.disclaire}</p>
+                  ? <p className="disclaimer">/!\ {project.disclaimer}</p>
                   : ''
               }
           </div>

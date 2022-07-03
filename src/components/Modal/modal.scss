@@ -18,8 +18,8 @@
   
   .modal {
     width: 40vw;
-    height: 80vh;
-    min-height: 600px;
+    height: auto;
+    min-height: 700px;
     background: white;
     color: white;
     z-index: 10;
@@ -42,7 +42,7 @@
   }
   
   .heading {
-    margin-bottom: 1rem;
+    margin: 3rem 0 1rem 0;
     color: #2c3e50;
     font-weight: 500;
     font-size: 18px;
@@ -146,6 +146,7 @@
   }
 
   .disclaimer {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color:grey;
+    padding-bottom: 6rem;
   }

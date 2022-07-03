@@ -189,7 +189,7 @@ const data = [
     ],
     githubLink: 'https://github.com/Lea-Bramoulle/lemotdelabombe',
     websiteLink: 'http://lemotdelabombe.herokuapp.com/',
-    disclaimer: 'Bucket AWS iniactivé, les images rattachées aux articles ne sont donc plus disponibles en ligne.',
+    disclaimer: 'Bucket AWS désactivé, les images rattachées aux articles ne sont donc plus visible en production.',
     isOpen: false,
   },
 ];
