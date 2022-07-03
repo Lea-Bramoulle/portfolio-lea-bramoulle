@@ -175,7 +175,7 @@ const data = [
         shortName: 'postgresql',
       },
       {
-        name: 'Amazon Web Services',
+        name: 'AWS',
         shortName: 'amazonwebservices',
       },
       {

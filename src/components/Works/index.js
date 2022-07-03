@@ -32,9 +32,9 @@ function Works() {
           }
           <div className="portfolio__card">
             <div className="portfolio__card__links">
-              <a href="#" className="portfolio__link"><i className="fab fa-github" /> Profile</a>
-              <a href="#" className="portfolio__link"><i className="fab fa-linkedin-in" /> Profile</a>
-              <a href="#" className="portfolio__link"><i className="fas fa-arrow-alt-to-bottom" /> CV</a>
+              <a href="https://github.com/Lea-Bramoulle" target="_blank" className="portfolio__link" rel="noreferrer"><i className="fab fa-github" /> Profile</a>
+              <a href="https://www.linkedin.com/in/l%C3%A9a-bramoull%C3%A9-55ba23158/" target="_blank" className="portfolio__link" rel="noreferrer"><i className="fab fa-linkedin-in" /> Profile</a>
+              <a href="#" className="portfolio__link" download="CV-lea-bramoulle"><i className="fas fa-arrow-alt-to-bottom" /> CV</a>
             </div>
           </div>
           {isOpen && <Modal />}
