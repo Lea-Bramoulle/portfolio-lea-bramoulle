@@ -3,13 +3,18 @@
 /* eslint-disable no-underscore-dangle */
 import { createStore } from 'redux';
 
-import { CHANGE_FRONT_CATEGORY, CHANGE_BACK_CATEGORY, CHANGE_OTHER_CATEGORY } from 'src/store/actions';
+import {
+  CHANGE_FRONT_CATEGORY, CHANGE_BACK_CATEGORY, CHANGE_OTHER_CATEGORY, TOGGLE_MODAL,
+} from 'src/store/actions';
+import projectsData from './projectsData';
 
 const initialState = {
   selectedLanguagesCategory: {
     name: 'front-end',
     translateY: 0,
   },
+  selectedProject: null,
+  projects: projectsData,
 };
 
 const reducer = (state = initialState, action) => {
@@ -37,6 +42,12 @@ const reducer = (state = initialState, action) => {
           name: 'other',
           translateY: 670,
         },
+      };
+    case TOGGLE_MODAL:
+      return {
+        ...state,
+        isOpen: !state.isOpen,
+        selectedProject: action.projectId,
       };
     default:
       return state;

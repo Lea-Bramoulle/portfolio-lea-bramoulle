@@ -58,8 +58,9 @@ function About() {
           <ul className="about__competences">
             <li><i className="devicon-github-original colored" /> GitHub</li>
             <li><i className="devicon-vscode-plain colored" /> VSCode</li>
-            <li><i className="devicon-npm-original-wordmark colored" /> Npm</li>
             <li><i className="devicon-eslint-original colored" /> Eslint</li>
+            <li><i className="devicon-heroku-plain colored" /> Heroku</li>
+            <li><i className="devicon-amazonwebservices-original colored" /> Amazon Web Services</li>
             <li><i className="devicon-illustrator-plain colored" /> Adobe Illustrator</li>
             <li><i className="devicon-photoshop-plain colored" /> Adobe Photoshop</li>
             <li><i className="devicon-canva-plain colored" /> Canva</li>
