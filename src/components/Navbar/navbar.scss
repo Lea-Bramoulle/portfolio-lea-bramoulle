@@ -48,3 +48,13 @@
   margin-left:1rem;
   margin-right:-5px;
 }
+
+@media screen and (width < 900px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .header__logo {
+    padding-top: 1rem;
+  }
+}

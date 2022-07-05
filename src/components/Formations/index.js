@@ -2,7 +2,7 @@ import './formations.scss';
 
 function Formations() {
   return (
-    <section className="formations">
+    <section className="formations container">
       <h2 className="formations__title">Mes Diplômes.</h2>
       <div className="formations__container">
         <div className="formations__card">

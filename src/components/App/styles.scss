@@ -25,6 +25,7 @@
   margin:auto;
 }
 
+
 .portfolio__link {
   color: vars.$primary;
   background-image: url(src/assets/images/bg-circle.png);
@@ -33,3 +34,28 @@
   padding: 1rem 1rem;
   text-decoration: none;
 }
+
+@media screen and (width > 1700px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media screen and (width > 1800px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media screen and (width < 800px) {
+  .hero {
+    background-size: cover;
+    background-position: -50px;
+  }
+
+  .container {
+    width:100%;
+    padding:0 1rem;
+  }
+}
+

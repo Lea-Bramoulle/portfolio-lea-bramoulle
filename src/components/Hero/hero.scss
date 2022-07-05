@@ -42,6 +42,25 @@
   }
 }
 
+@media screen and (width < 800px) {
+  .hero-main {
 
+    & p {
+      display: none;
+    }
+  
+    &__title {
+      font-size: 3rem;
+      margin:2.5rem 0 2.5rem 2.5rem;
+      line-height: 2.5rem;
+    }
+    
+    &__subtitle {
+      margin:2.5rem ;
+    }
+
+
+  }
+}
 
 

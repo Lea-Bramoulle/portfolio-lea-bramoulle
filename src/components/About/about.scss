@@ -2,7 +2,6 @@
 
 .about {
   margin: 6rem auto; 
-  padding:0 0 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,7 +22,7 @@
   &__left-text {
     padding:4rem 0 3rem 0;
     margin-bottom: 1rem;
-    line-height: 1.6rem;
+    line-height: 2rem;
   }
 
   &__btn {
@@ -85,10 +84,23 @@
   font-weight: bold;
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
 
-  .about__left, .about__middle, .about__right {
+  .about__left, .about__right {
       width:100%;
       margin:1.5rem 0;
+
+  }
+
+  .about {
+    margin: auto; 
+
+    &__left {
+      padding:0;
+    }
+
+    &__right--right {
+      width: 30%;
+    }
   }
 }
