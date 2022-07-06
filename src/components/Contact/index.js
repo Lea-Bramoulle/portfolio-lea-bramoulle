@@ -2,7 +2,7 @@ import './contact.scss';
 
 function Contact() {
   return (
-    <section className="contact container">
+    <section className="contact container" id="contact">
       <div className="contact__information">
         <h2 className="contact__information__title">Vous souhaitez collaborer ? Vous avez un projet ? Contactez-moi 🎉</h2>
         <p> 📍   Montpellier, France</p>

@@ -1,0 +1,12 @@
+@use './../../styles/vars';
+
+.footer {
+    background-color: vars.$primary-light;
+
+    & p {
+        font-size: 0.8rem;
+        color: grey;
+        text-align: center;
+        padding: 4rem;
+    }
+}

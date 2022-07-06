@@ -8,6 +8,7 @@ import About from '../About';
 import Works from '../Works';
 import Formations from '../Formations';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
 // == Composant
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Works />
       <Formations />
       <Contact />
+      <Footer />
     </div>
   );
 }
