@@ -1,41 +1,6 @@
 const data = [
   {
     id: 2,
-    name: 'SuisJeEnFaillite',
-    img: 'sef',
-    description: "Une solution simple, pour éclairer sur la situation financière d'une entreprise, et évaluer l'état de cessation des paiements.",
-    technos: [
-      {
-        name: 'Ruby',
-        shortName: 'ruby',
-      },
-      {
-        name: 'Ruby on Rails',
-        shortName: 'rails',
-      },
-      {
-        name: 'PostgreSql',
-        shortName: 'postgresql',
-      },
-      {
-        name: 'Amazon Web Services',
-        shortName: 'amazonwebservices',
-      },
-      {
-        name: 'Bootstrap',
-        shortName: 'bootstrap',
-      },
-      {
-        name: 'Heroku',
-        shortName: 'heroku',
-      }],
-    githubLink: null,
-    websiteLink: null,
-    disclaimer: null,
-    isOpen: false,
-  },
-  {
-    id: 3,
     name: 'To Do App',
     img: 'todoapp',
     description: 'Application "To Do List" pour créer, visualiser et organiser des tâches. Possibilité d\'actier un dark mode.',
@@ -61,12 +26,12 @@ const data = [
         shortName: 'css3',
       }],
     githubLink: 'https://github.com/Lea-Bramoulle/training-todo-app',
-    websiteLink: null,
+    websiteLink: 'https://62c58f626eb5ed2587ad7149--capable-piroshki-80c9fa.netlify.app/',
     disclaimer: null,
     isOpen: false,
   },
   {
-    id: 4,
+    id: 3,
     name: 'Ip Address Tracker',
     img: 'iptracker',
     description: 'Application de tracking d\'adresse IP, réalisée à l\'aide de des APIs "IP Geolocation API by IPify" et "LeafletJS"',
@@ -98,7 +63,7 @@ const data = [
     isOpen: false,
   },
   {
-    id: 5,
+    id: 4,
     name: 'PokeApp',
     img: 'pokeapp',
     description: 'Pokedex réalisé en Javascript Vanilla à l\'aide de l\'API "PokeApi". Fetchez les tous ! ',
@@ -117,6 +82,41 @@ const data = [
       },
     ],
     githubLink: 'https://github.com/Lea-Bramoulle/my-pokedex',
+    websiteLink: null,
+    disclaimer: null,
+    isOpen: false,
+  },
+  {
+    id: 5,
+    name: 'SuisJeEnFaillite',
+    img: 'sef',
+    description: "Une solution simple, pour éclairer sur la situation financière d'une entreprise, et évaluer l'état de cessation des paiements.",
+    technos: [
+      {
+        name: 'Ruby',
+        shortName: 'ruby',
+      },
+      {
+        name: 'Ruby on Rails',
+        shortName: 'rails',
+      },
+      {
+        name: 'PostgreSql',
+        shortName: 'postgresql',
+      },
+      {
+        name: 'Amazon Web Services',
+        shortName: 'amazonwebservices',
+      },
+      {
+        name: 'Bootstrap',
+        shortName: 'bootstrap',
+      },
+      {
+        name: 'Heroku',
+        shortName: 'heroku',
+      }],
+    githubLink: null,
     websiteLink: null,
     disclaimer: null,
     isOpen: false,
@@ -190,6 +190,30 @@ const data = [
     githubLink: 'https://github.com/Lea-Bramoulle/lemotdelabombe',
     websiteLink: 'http://lemotdelabombe.herokuapp.com/',
     disclaimer: 'Bucket AWS désactivé, les images rattachées aux articles ne sont donc plus visible en production.',
+    isOpen: false,
+  },
+  {
+    id: 8,
+    name: 'Catalogue Angelotti Promotion',
+    img: 'catalogueangelotti',
+    description: 'Catalogue interactif sur borne tactile de présentation de l\'offre de promotion immobilière du Groupe Immobilier ANGELOTTI, à destination des Salons Immobiliers.',
+    technos: [
+      {
+        name: 'Html5',
+        shortName: 'html5',
+      },
+      {
+        name: 'Css3',
+        shortName: 'css3',
+      },
+      {
+        name: 'Bootstrap',
+        shortName: 'bootstrap',
+      },
+    ],
+    githubLink: null,
+    websiteLink: null,
+    disclaimer: null,
     isOpen: false,
   },
 ];

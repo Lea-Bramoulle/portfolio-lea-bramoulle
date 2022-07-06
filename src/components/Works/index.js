@@ -17,13 +17,6 @@ function Works() {
         <div className="container">
           <h2 className="portfolio__title">Mes réalisations</h2>
           <div className="portfolio__container">
-            <div className="portfolio__card">
-              <img src={require('src/assets/images/github.png')} className="portfolio__card-img" alt="Github Profile Lea-Bramoulle" />
-            </div>
-            <div className="portfolio__card">
-              <img src={require('src/assets/images/1.jpg')} className="portfolio__card-img" alt="Github Profile Lea-Bramoulle" />
-            </div>
-
             {
             projects.map((project) => (
               <div key={project.id} className="portfolio__card" onClick={() => dispatch(toggleModal(project.id))}>
@@ -31,6 +24,9 @@ function Works() {
               </div>
             ))
             }
+            <div className="portfolio__card">
+              <img src={require('src/assets/images/1.jpg')} className="portfolio__card-img" alt="Github Profile Lea-Bramoulle" />
+            </div>
             <div className="portfolio__card">
               <div className="portfolio__card__links">
                 <a href="https://github.com/Lea-Bramoulle" target="_blank" className="portfolio__link" rel="noreferrer"><i className="fab fa-github" /> Profile</a>
