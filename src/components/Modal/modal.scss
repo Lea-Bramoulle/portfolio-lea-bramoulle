@@ -150,3 +150,21 @@
     color:grey;
     padding-bottom: 6rem;
   }
+
+  @media screen and (width < 600px) {
+    .modal {
+      width:90vw;
+    }
+  }
+
+  @media screen and (width < 1050px) {
+    .modal {
+      width:60vw;
+    }
+  }
+
+  @media screen and (width > 1700px) {
+    .modal {
+      width:30vw;
+    }
+  }

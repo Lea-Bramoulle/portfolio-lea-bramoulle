@@ -99,17 +99,26 @@
       padding:0;
     }
 
+    &__right {
+      padding:0;
+    }
+
+    &__left-title {
+      text-align: left;
+    }
+
     &__right--right {
-      width: 25%;
+      width: 28%;
+      padding-top: 1rem;
     }
 
     &__card-title {
       font-size: 0.65rem;
+      margin : 1.5rem 0 1rem 0.5rem;
     }
 
     &__competences {
-      padding:2.5rem 0 2.4rem 2.4rem ;
-
+      padding:2.5rem 0 2.4rem 1.5rem ;
     }
 
     &__competences li {
