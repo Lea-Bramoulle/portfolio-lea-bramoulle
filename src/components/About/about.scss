@@ -100,7 +100,20 @@
     }
 
     &__right--right {
-      width: 30%;
+      width: 25%;
+    }
+
+    &__card-title {
+      font-size: 0.65rem;
+    }
+
+    &__competences {
+      padding:2.5rem 0 2.4rem 2.4rem ;
+
+    }
+
+    &__competences li {
+      font-size: 0.9rem;
     }
   }
 }
