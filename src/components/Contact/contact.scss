@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
 
     &__information {
         width:50%;
@@ -57,4 +58,24 @@
     }
 
 
+}
+
+@media screen and ( width < 800px) {
+
+  .contact {
+
+
+    &__information {
+      width: 100%;
+    }
+
+    &__form {
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    &__information__links {
+      display: none;
+    }
+  }
 }

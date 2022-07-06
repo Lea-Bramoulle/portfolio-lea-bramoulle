@@ -12,3 +12,26 @@
 .contact-fixed li {
   padding:0.4rem;
 }
+
+
+@media screen and ( width < 800px) {
+
+  .contact-fixed {
+    bottom : 0;
+    left:15vw;
+    top: 95%;
+    padding:0;
+    border-radius:25px 25px 0 0;
+
+
+    &__container {
+      display: flex;
+      padding: 1rem 4rem;
+
+      & li {
+        padding : 0 1rem;
+      }
+    }
+  }
+ 
+}

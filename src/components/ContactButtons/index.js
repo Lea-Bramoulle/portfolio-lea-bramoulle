@@ -3,7 +3,7 @@ import './contactButtons.scss';
 function ContactButtons() {
   return (
     <section className="contact-fixed">
-      <ul>
+      <ul className="contact-fixed__container">
         <li><i className="fas fa-file-alt" /></li>
         <li><i className="fab fa-github" /></li>
         <li><i className="fab fa-linkedin-in" /></li>

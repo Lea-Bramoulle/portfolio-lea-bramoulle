@@ -1,7 +1,6 @@
 @use './../../styles/vars';
 
 .formations {
-    margin:4rem auto;
     padding-top: 4rem;
 
     &__title {
@@ -13,6 +12,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__card {
@@ -37,3 +37,13 @@
     }
 }
 
+@media screen and (width < 800px) {
+  .formations {
+    margin: auto;
+
+    &__card {
+      width: 50%;
+      padding-bottom: 2rem;
+    }
+  }
+}

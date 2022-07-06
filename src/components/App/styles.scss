@@ -47,6 +47,17 @@
   }
 }
 
+@media screen and (width < 1050px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero {
+    background-size: cover;
+    background-position: -50px;
+  }
+}
+
 @media screen and (width < 800px) {
   .hero {
     background-size: cover;
