@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable quotes */
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
@@ -15,7 +16,7 @@ function Works() {
   const dispatch = useDispatch();
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="realisations">
       <div className="portfolio__bg">
         <div className="container">
           <h2 className="portfolio__title">Mes réalisations</h2>

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable quotes */
 import "./about.scss";
 
@@ -16,7 +17,7 @@ function About() {
   const dispatch = useDispatch();
 
   return (
-    <section className="container about">
+    <section className="container about" id="competences">
       <div className="about__left">
         <h2 className="about__left-title">A propos et compétences</h2>
         <p className="about__left-text">
