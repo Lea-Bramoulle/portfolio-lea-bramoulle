@@ -71,8 +71,7 @@ const data = [
       },
     ],
     githubLink: "https://github.com/Lea-Bramoulle/training-todo-app",
-    websiteLink:
-      "https://62c58f626eb5ed2587ad7149--capable-piroshki-80c9fa.netlify.app/",
+    websiteLink: "https://my-todoreactapp.netlify.app/",
     disclaimer: null,
     isOpen: false,
     video: false,
@@ -132,8 +131,7 @@ const data = [
       },
     ],
     githubLink: "https://github.com/Lea-Bramoulle/my-pokedex",
-    websiteLink:
-      "https://6303382144ba2e3bb4d4fd67--peaceful-sunflower-ae0e1c.netlify.app/",
+    websiteLink: "https://my-pokeapp.netlify.app/",
     disclaimer: null,
     isOpen: false,
     video: false,
