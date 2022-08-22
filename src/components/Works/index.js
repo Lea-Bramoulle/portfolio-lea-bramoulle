@@ -7,6 +7,8 @@ import { toggleModal } from "src/store/actions";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from "../Modal";
 
+import pdfFile from "../../assets/images/cv-lea-bramoulle.pdf";
+
 function Works() {
   const isOpen = useSelector((state) => state.isOpen);
   const projects = useSelector((state) => state.projects);
@@ -57,9 +59,10 @@ function Works() {
                   <i className="fab fa-linkedin-in" /> Profile
                 </a>
                 <a
-                  href="#"
+                  href={pdfFile}
+                  target="_blank"
+                  rel="noreferrer"
                   className="portfolio__link"
-                  download="CV-lea-bramoulle"
                 >
                   <i className="fas fa-arrow-alt-to-bottom" /> CV
                 </a>
