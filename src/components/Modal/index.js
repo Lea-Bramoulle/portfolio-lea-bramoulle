@@ -1,9 +1,9 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleModal } from '../../store/actions';
+import { useSelector, useDispatch } from "react-redux";
+import { toggleModal } from "../../store/actions";
 
-import './modal.scss';
+import "./modal.scss";
 
 function Modal() {
   const selectedProjectId = useSelector((state) => state.selectedProject);
@@ -18,9 +18,29 @@ function Modal() {
       <div className="centered">
         <div className="modal">
           <div className="modalHeader">
-            <img src={require(`src/assets/images/${project.img}2.png`)} className="modal-img" alt="Github Profile Lea-Bramoulle" />
+            {project.video === true ? (
+              <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/PNj_SqhSVg8?start=5107"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            ) : (
+              <img
+                src={require(`src/assets/images/${project.img}2.png`)}
+                className="modal-img"
+                alt="Github Profile Lea-Bramoulle"
+              />
+            )}
           </div>
-          <button type="button" className="closeBtn" onClick={() => dispatch(toggleModal())}>
+          <button
+            type="button"
+            className="closeBtn"
+            onClick={() => dispatch(toggleModal())}
+          >
             <i className="fas fa-times" />
           </button>
           <div className="modalContent">
@@ -28,30 +48,45 @@ function Modal() {
             <p>{project.description}</p>
             <h3 className="heading mtb">Technos utilisées</h3>
             <div className="technos-container">
-              {
-                project.technos.map((techno) => (
-                  <p className="techno-item"><i className={`devicon-${techno.shortName}-plain colored`} /> {techno.name}</p>
-                ))
-              }
+              {project.technos.map((techno) => (
+                <p className="techno-item">
+                  <i className={`devicon-${techno.shortName}-plain colored`} />{" "}
+                  {techno.name}
+                </p>
+              ))}
             </div>
-            {
-                project.disclaimer !== null
-                  ? <p className="disclaimer">/!\ {project.disclaimer}</p>
-                  : ''
-              }
+            {project.disclaimer !== null ? (
+              <p className="disclaimer">/!\ {project.disclaimer}</p>
+            ) : (
+              ""
+            )}
           </div>
           <div className="modalActions">
             <div className="actionsContainer">
-              {
-                project.githubLink !== null
-                  ? <a href={`${project.githubLink}`} className="portfolio__link" target="_blank" rel="noreferrer"><i className="fab fa-github" /> Repository</a>
-                  : ''
-              }
-              {
-                project.websiteLink !== null
-                  ? <a href={`${project.websiteLink}`} className="portfolio__link" target="_blank" rel="noreferrer"><i className="fas fa-external-link" /> Site web</a>
-                  : ''
-              }
+              {project.githubLink !== null ? (
+                <a
+                  href={`${project.githubLink}`}
+                  className="portfolio__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github" /> Repository
+                </a>
+              ) : (
+                ""
+              )}
+              {project.websiteLink !== null ? (
+                <a
+                  href={`${project.websiteLink}`}
+                  className="portfolio__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-external-link" /> Site web
+                </a>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

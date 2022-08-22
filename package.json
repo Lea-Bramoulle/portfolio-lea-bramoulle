@@ -5,12 +5,13 @@
     "npm": "<=8.5.0"
   },
   "scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"deploy": "git push heroku main",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "lint": "eslint ./src/** --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint --fix ./src/** --no-error-on-unmatched-pattern",
+    "clean": "rm -rf dist",
+    "clean:all": "rm -rf dist node_modules yarn.lock package-lock.json"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
@@ -51,7 +52,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "react-scripts": "5.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
