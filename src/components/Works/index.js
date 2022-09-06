@@ -41,7 +41,7 @@ function Works() {
                 />
               </div>
             ))}
-            <div className="portfolio__card">
+            {/* <div className="portfolio__card">
               <div className="portfolio__card__links">
                 <a
                   href="https://github.com/Lea-Bramoulle"
@@ -68,7 +68,7 @@ function Works() {
                   <i className="fas fa-arrow-alt-to-bottom" /> CV
                 </a>
               </div>
-            </div>
+            </div> */}
             {isOpen && <Modal />}
           </div>
         </div>

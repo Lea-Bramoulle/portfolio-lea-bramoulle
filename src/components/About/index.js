@@ -27,6 +27,22 @@ function About() {
           Fullstack JS, spécialisée ReactJS.
         </p>
         <a
+          href="https://github.com/Lea-Bramoulle"
+          target="_blank"
+          className="portfolio__link"
+          rel="noreferrer"
+        >
+          <i className="fab fa-github" /> Profile
+        </a>
+        <a
+          href="https://www.linkedin.com/in/l%C3%A9a-bramoull%C3%A9-55ba23158/"
+          target="_blank"
+          className="portfolio__link"
+          rel="noreferrer"
+        >
+          <i className="fab fa-linkedin-in" /> Profile
+        </a>
+        <a
           href={pdfFile}
           target="_blank"
           className="portfolio__link"

@@ -44,40 +44,6 @@ const data = [
   },
   {
     id: 2,
-    name: "To Do App",
-    img: "todoapp",
-    description:
-      'Application "To Do List" pour créer, visualiser et organiser des tâches. Possibilité d\'actier un dark mode.',
-    technos: [
-      {
-        name: "React",
-        shortName: "react",
-      },
-      {
-        name: "Redux",
-        shortName: "redux",
-      },
-      {
-        name: "Sass",
-        shortName: "sass",
-      },
-      {
-        name: "Html5",
-        shortName: "html5",
-      },
-      {
-        name: "Css3",
-        shortName: "css3",
-      },
-    ],
-    githubLink: "https://github.com/Lea-Bramoulle/training-todo-app",
-    websiteLink: "https://my-todoreactapp.netlify.app/",
-    disclaimer: null,
-    isOpen: false,
-    video: false,
-  },
-  {
-    id: 3,
     name: "Ip Address Tracker",
     img: "iptracker",
     description:
@@ -111,7 +77,76 @@ const data = [
     video: false,
   },
   {
+    id: 3,
+    name: "The Planets Challenge",
+    img: "theplanets",
+    description:
+      "Single Page fact site for all planets in our solar system made in Javascript et React.",
+    technos: [
+      {
+        name: "Javascript",
+        shortName: "javascript",
+      },
+      {
+        name: "React",
+        shortName: "react",
+      },
+      {
+        name: "Sass",
+        shortName: "sass",
+      },
+      {
+        name: "Html5",
+        shortName: "html5",
+      },
+      {
+        name: "Css3",
+        shortName: "css3",
+      },
+    ],
+    githubLink:
+      "https://github.com/Lea-Bramoulle/training-the-planets-frontend-mentor",
+    websiteLink: "https://the-planets-fact-site.netlify.app/",
+    disclaimer: null,
+    isOpen: false,
+    video: false,
+  },
+  {
     id: 4,
+    name: "To Do App",
+    img: "todoapp",
+    description:
+      'Application "To Do List" pour créer, visualiser et organiser des tâches. Possibilité d\'actier un dark mode.',
+    technos: [
+      {
+        name: "React",
+        shortName: "react",
+      },
+      {
+        name: "Redux",
+        shortName: "redux",
+      },
+      {
+        name: "Sass",
+        shortName: "sass",
+      },
+      {
+        name: "Html5",
+        shortName: "html5",
+      },
+      {
+        name: "Css3",
+        shortName: "css3",
+      },
+    ],
+    githubLink: "https://github.com/Lea-Bramoulle/training-todo-app",
+    websiteLink: "https://my-todoreactapp.netlify.app/",
+    disclaimer: null,
+    isOpen: false,
+    video: false,
+  },
+  {
+    id: 5,
     name: "PokeApp",
     img: "pokeapp",
     description:
@@ -137,7 +172,7 @@ const data = [
     video: false,
   },
   {
-    id: 5,
+    id: 6,
     name: "Vibes Resort",
     img: "vibesresort",
     description:
@@ -175,7 +210,7 @@ const data = [
     video: false,
   },
   {
-    id: 6,
+    id: 7,
     name: "SuisJeEnFaillite",
     img: "sef",
     description:
@@ -213,7 +248,7 @@ const data = [
     video: false,
   },
   {
-    id: 7,
+    id: 8,
     name: "Le Mot de la Bombe",
     img: "lemotdelabombe",
     description:
@@ -252,7 +287,7 @@ const data = [
     video: false,
   },
   {
-    id: 8,
+    id: 9,
     name: "Catalogue Angelotti Promotion",
     img: "catalogueangelotti",
     description:
