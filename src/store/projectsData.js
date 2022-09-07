@@ -35,6 +35,10 @@ const data = [
         name: "Sass",
         shortName: "sass",
       },
+      {
+        name: "figma",
+        shortName: "figma",
+      },
     ],
     githubLink: null,
     websiteLink: null,
@@ -102,6 +106,10 @@ const data = [
       {
         name: "Css3",
         shortName: "css3",
+      },
+      {
+        name: "figma",
+        shortName: "figma",
       },
     ],
     githubLink:
@@ -252,7 +260,7 @@ const data = [
     name: "Le Mot de la Bombe",
     img: "lemotdelabombe",
     description:
-      "Blog sur le thème du Street-Art réalisé pour une amie en école de journalisme. Possibilité de publier, mettre en forme et éditer des articles via un panel d'administration.",
+      "Blog sur le thème du Street-Art réalisé pour une étudiante en école de journalisme. Possibilité de publier, mettre en forme et éditer des articles via un panel d'administration.",
     technos: [
       {
         name: "Ruby",
