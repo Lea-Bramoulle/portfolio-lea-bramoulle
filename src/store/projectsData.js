@@ -48,6 +48,44 @@ const data = [
   },
   {
     id: 2,
+    name: "Kanban Task Management Web App",
+    img: "kanban",
+    description:
+      "In this project, I build a fully-functional task management app with a light/dark mode toggle. (Back-end : API Rest - Front-End : React.Js with Redux Toolkit and RTK Query)",
+    technos: [
+      {
+        name: "NodeJs",
+        shortName: "nodejs",
+      },
+      {
+        name: "Express",
+        shortName: "express",
+      },
+      {
+        name: "PostgreSql",
+        shortName: "postgresql",
+      },
+      {
+        name: "React",
+        shortName: "react",
+      },
+      {
+        name: "Redux",
+        shortName: "redux",
+      },
+      {
+        name: "Sass",
+        shortName: "sass",
+      },
+    ],
+    githubLink: "https://github.com/Lea-Bramoulle/training-kanban-front",
+    websiteLink: null,
+    disclaimer: null,
+    isOpen: false,
+    video: false,
+  },
+  {
+    id: 3,
     name: "Ip Address Tracker",
     img: "iptracker",
     description:
@@ -81,7 +119,7 @@ const data = [
     video: false,
   },
   {
-    id: 3,
+    id: 4,
     name: "The Planets Challenge",
     img: "theplanets",
     description:
@@ -119,40 +157,40 @@ const data = [
     isOpen: false,
     video: false,
   },
-  {
-    id: 4,
-    name: "To Do App",
-    img: "todoapp",
-    description:
-      'Application "To Do List" pour créer, visualiser et organiser des tâches. Possibilité d\'actier un dark mode.',
-    technos: [
-      {
-        name: "React",
-        shortName: "react",
-      },
-      {
-        name: "Redux",
-        shortName: "redux",
-      },
-      {
-        name: "Sass",
-        shortName: "sass",
-      },
-      {
-        name: "Html5",
-        shortName: "html5",
-      },
-      {
-        name: "Css3",
-        shortName: "css3",
-      },
-    ],
-    githubLink: "https://github.com/Lea-Bramoulle/training-todo-app",
-    websiteLink: "https://my-todoreactapp.netlify.app/",
-    disclaimer: null,
-    isOpen: false,
-    video: false,
-  },
+  // {
+  //   id: 4,
+  //   name: "To Do App",
+  //   img: "todoapp",
+  //   description:
+  //     'Application "To Do List" pour créer, visualiser et organiser des tâches. Possibilité d\'actier un dark mode.',
+  //   technos: [
+  //     {
+  //       name: "React",
+  //       shortName: "react",
+  //     },
+  //     {
+  //       name: "Redux",
+  //       shortName: "redux",
+  //     },
+  //     {
+  //       name: "Sass",
+  //       shortName: "sass",
+  //     },
+  //     {
+  //       name: "Html5",
+  //       shortName: "html5",
+  //     },
+  //     {
+  //       name: "Css3",
+  //       shortName: "css3",
+  //     },
+  //   ],
+  //   githubLink: "https://github.com/Lea-Bramoulle/training-todo-app",
+  //   websiteLink: "https://my-todoreactapp.netlify.app/",
+  //   disclaimer: null,
+  //   isOpen: false,
+  //   video: false,
+  // },
   {
     id: 5,
     name: "PokeApp",
